@@ -28,7 +28,6 @@ router.get('/:id/actions', async (req, res) => {
 router.post('/', async (req, res) => {
     try {
         const project = req.body;
-        console.log(project);
         if(project.name && project.description) {
             const posted = await db.insert(project);
             res.status(201).json(posted);
