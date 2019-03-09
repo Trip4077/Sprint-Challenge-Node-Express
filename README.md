@@ -26,13 +26,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    I learned about setting up express servers and middleware
+
 - [ ] Describe Middleware?
+
+    Middleware is a piece of code that extends or adds features to other 
+    functions and code
 
 - [ ] Describe a Resource?
 
+    Resources are data that can be managed by cients via API endpoints
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    You can return status codes like 200 and 201 or send a message via json
+
 - [ ] How can we partition our application into sub-applications?
+
+    We can make our code modular by seperating it out into smaller, organized 
+    files and components.
 
 ## Project Setup
 
