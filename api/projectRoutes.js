@@ -40,6 +40,24 @@ router.post('/', async (req, res) => {
     }
 })
 
+//Edit a project
+router.put('/:id', async (req, res) => {
+    try {
+        const id = req.params.id;
+        const update = req.body;
+
+        const updated = await db.update(id, update);
+
+        if(updated) {
+            res.status(201).json(updated);
+        } else {
+            res.status(404).json({ message: "The project with the specified ID does not exist." })
+        }
+    } catch(err) {
+        res.status(500).json({ error: "The project information could not be updated." });
+    }
+})
+
 module.exports = router;
 
 
